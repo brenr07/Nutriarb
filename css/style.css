@@ -1,0 +1,298 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-size: 120%;
+    background-image:url("fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+header .logo{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #fbeeca;
+}
+/* El nombre de la pagina porque el logo no posee*/
+h1 {
+    color:#B4224E;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+img{
+    transition: all;
+}
+img:hover{
+    height: 60%;
+}
+
+/* Estilo redes sociales*/
+
+.redes nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.redes nav ul li>a{
+    display: flex;
+}
+
+/* Navegador de las diferentes secciones de la pagina*/
+
+.nav-main ul li>a{
+    color:#B4224E;   
+    padding: 10px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    min-width: 100px;
+    border-style:groove;
+    border-width: 0,1px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+}
+.nav-main ul li>a:hover{
+    color: #B4224E;
+    background-color: #8CC53D;
+}
+.nav-main ul ul{
+    position: absolute;
+    /*left: 150 px;*/
+    width: 200px;
+    display: none;
+}
+
+.nav-main{
+      width: 130px;
+      text-align: center;
+      float: left;
+      background-color: rgb(223, 194, 156);
+}
+ul{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(223, 194, 156);
+}
+
+/*Submenu de recetas*/
+.nav-main li:hover > ul{
+    display: block;
+    align-items:right;
+    color: #B4224E;
+    background-color: #fbeeca;
+}
+
+
+/* son los que marcan las diferentes secciones de pagina*/
+main{
+    padding: 10px;
+    height:120vh;
+    display: grid;
+}
+h2 {
+    color:black;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 25px;
+    text-align:center;
+}
+h3 {
+    color:black;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+}
+/* Secciones del inicio*/
+.indexMain{
+    padding-top: 10px;
+    height:110vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10vh 50vh 10vh 50vh;
+    grid-template-areas: 'turnos recetaDelDia'
+    'turnos hamburguesaCalabaza'
+    'turnos articuloDestacado'
+    'turnos saludableVsLight'
+    ;
+    justify-items: center;
+    justify-content: end;
+}
+.indexMain .turnos{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-areas: 'turnos';
+}
+.indexMain .turnos img{
+    padding-top: 20px;
+    display: grid;
+    width: 46vw;
+    height: auto;
+    margin: auto;
+    transition: all;
+}
+.indexMain .turnos img:hover{
+    width: 48vw;
+}
+.indexMain .seccionesInicio{
+    font-size: 40px;
+    border: rgb(223, 194, 156) ;
+    padding:10px;
+}
+.recetaDelDia .articuloDestacado{
+    color:black;
+    background-color: #757470;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.indexMain .seccionesInicio .recetaDelDia h2{ 
+    grid-area: 'recetaDelDia';
+}
+
+.indexMain .seccionesInicio.hamburguesaCalabaza img{
+    grid-area: 'hamburguesaCalabaza';
+}
+.indexMain .seccionesInicio.recetasarticuloDestacado h2{
+    grid-area: 'articuloDestacado';
+}
+.indexMain .seccionesInicio.saludableVsLight img{
+    grid-area: 'saludableVsLight';
+}
+/* RECETAS */
+.mainRecetas{
+    width: 90%;
+    height: auto;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+.mainRecetas .todasLasRecetas{
+    color: black;
+    background-color: none;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 120vw;
+    align-content: center;
+}
+.recetas{
+    align-content: center;
+    justify-content: space-evenly;
+    padding:10px;
+}
+
+/* ARTICULOS */
+.mainArticulos{
+    width: 90%;
+    height: auto;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+.mainArticulos .todosLosArticulos{
+    color: black;
+    background-color: none;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 120vw;
+    align-content: center;
+}
+/* BIOGRAFIA */
+.main__biografia {
+    width: 80vw;
+    height: auto;
+    justify-content: center; }
+    .main__biografia h2 {
+      font-size: xx-large;
+      word-spacing: 5px;
+      padding: 5px; }
+    .main__biografia h3 {
+      text-align: center;
+      text-decoration-line: overline;
+      letter-spacing: 5px;
+      font-size: larger;
+      padding-bottom: 30px; }
+    .main__biografia .img__biografia {
+      display: flex;
+      justify-content: center;
+      padding: 30px; }
+    .main__biografia p {
+      text-align: justify; }
+      
+/* CONTACTO */
+.contacto{
+    color: black;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 25px;
+    text-align: center;
+    width: 700px;
+    height: 400px;
+    padding: 100px;   
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+/* Pie de pagina*/
+/* CON GRADIENTE */
+footer{
+    color:black;
+    background-color: #DFC29C;
+    background-image: linear-gradient(to left,#DFC29C, #fbeeca);
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (min-width: 768px) and (max-width:1200px) {
+    .logo .imgLogo{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .indexMain{
+        display: flex;
+        flex-wrap:wrap;
+        width: 622px;
+        height: 810px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .indexMain .turnos{
+        width: 622px;
+        height: 400px;
+        align-content: center;
+    }
+    .indexMain .seccionesInicio{
+        display: flex;
+        flex-flow: row wrap;
+        width: 640px;
+        height: auto;
+        font-size: 20px;
+        border: rgb(223, 194, 156) ;
+        background-color:#DFC29C;
+        justify-content: space-between;
+}
+footer {
+    margin:10px;
+    padding: 10px;
+    }
+}
