@@ -37,6 +37,47 @@ img:hover{
 
 /* Estilo redes sociales*/
 
+#buscador {
+    margin-right: 30px;
+    padding: 10px;
+}
+
+#i-buscar {
+    border-radius: 5px;
+    text-align: center;
+    height: 35px;
+    width: 250px;
+    border: 1px solid rgb(223, 194, 156);
+}
+
+#btn-buscar {
+    border-radius: 5px;
+    text-align: center;
+    height: 32px;
+    width: 80px;
+    border: 1px;
+    background: #fbeeca;
+}
+
+#btn-buscar:hover {
+    border-radius: 5px;
+    transition: 400ms;
+    text-align: center;
+    margin: 1px;
+    height: 35px;
+    width: 85px;
+    background-color: #B4224E;
+    border: 1px 
+}
+
+
+.redes-soc {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 20px 5px 0px;
+}
+
 .redes nav ul{
     list-style: none;
     display: flex;

@@ -11,13 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/brenr07/Nutriarb.git"
   },
-  "author": "",
+  "author": "Brenda Rodriguez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brenr07/Nutriarb/issues"
   },
   "homepage": "https://github.com/brenr07/Nutriarb#readme",
-  "description": "",
+  "description": "Nutriarb es una página de contenido sobre nutrición, en donde encontrarás recetas y articulos sobre alimentacion",
   "dependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
