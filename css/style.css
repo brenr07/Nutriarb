@@ -67,7 +67,8 @@ img:hover{
     height: 35px;
     width: 85px;
     background-color: #B4224E;
-    border: 1px 
+    border: 1px;
+    cursor: pointer;
 }
 
 
