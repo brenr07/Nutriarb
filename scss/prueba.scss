@@ -1,0 +1,35 @@
+@mixin mainStyle($width, $height) {
+    width: $width;
+    height: $height;
+}
+.main__biografia{
+    @include mainStyle(80vw, auto);
+    justify-content: center;
+
+    h2{
+        font-size: xx-large;
+        word-spacing: 5px;
+        padding: 5px;
+    }
+    h3{
+        text-align: center;
+        text-decoration-line: overline;
+        letter-spacing: 5px;
+        font-size: larger;
+        padding-bottom: 30px;
+    }
+    .img__biografia{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    p{
+        text-align: justify
+    }
+}
+.mainArticulos{
+    @include mainStyle(80vw, auto)
+}
+.main__contacto{
+    @include mainStyle(80vw, auto)
+}

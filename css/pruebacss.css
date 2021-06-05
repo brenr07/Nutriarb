@@ -1,0 +1,28 @@
+.main__biografia {
+  width: 80vw;
+  height: auto;
+  justify-content: center; }
+  .main__biografia h2 {
+    font-size: xx-large;
+    word-spacing: 5px;
+    padding: 5px; }
+  .main__biografia h3 {
+    text-align: center;
+    text-decoration-line: overline;
+    letter-spacing: 5px;
+    font-size: larger;
+    padding-bottom: 30px; }
+  .main__biografia .img__biografia {
+    display: flex;
+    justify-content: center;
+    padding: 30px; }
+  .main__biografia p {
+    text-align: justify; }
+
+.mainArticulos {
+  width: 80vw;
+  height: auto; }
+
+.main__contacto {
+  width: 80vw;
+  height: auto; }
