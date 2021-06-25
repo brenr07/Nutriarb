@@ -7,10 +7,7 @@
 }
 body{
     font-size: 120%;
-    background-image:url("fondo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #fbeeca;
     
 }
 header .logo{
@@ -66,7 +63,7 @@ img:hover{
     margin: 1px;
     height: 35px;
     width: 85px;
-    background-color: #B4224E;
+    background-color: rgb(223, 194, 156);
     border: 1px;
     cursor: pointer;
 }
@@ -107,7 +104,7 @@ img:hover{
 }
 .nav-main ul li>a:hover{
     color: #B4224E;
-    background-color: #8CC53D;
+    background-color: #fbeeca;
 }
 .nav-main ul ul{
     position: absolute;
@@ -158,34 +155,28 @@ h3 {
 /* Secciones del inicio*/
 .indexMain{
     padding-top: 10px;
-    height:110vh;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 10vh 50vh 10vh 50vh;
-    grid-template-areas: 'turnos recetaDelDia'
-    'turnos hamburguesaCalabaza'
-    'turnos articuloDestacado'
-    'turnos saludableVsLight'
-    ;
     justify-items: center;
     justify-content: end;
+    height: auto;
 }
 .indexMain .turnos{
     align-items: center;
     justify-content: center;
     text-align: center;
-    grid-template-areas: 'turnos';
+
 }
 .indexMain .turnos img{
     padding-top: 20px;
     display: grid;
-    width: 46vw;
+    width: 34vw;
     height: auto;
     margin: auto;
     transition: all;
 }
 .indexMain .turnos img:hover{
-    width: 48vw;
+    width: 36vw;
 }
 .indexMain .seccionesInicio{
     font-size: 40px;
@@ -199,29 +190,15 @@ h3 {
     font-size: 25px;
     letter-spacing: 5px;
 }
-.indexMain .seccionesInicio .recetaDelDia h2{ 
-    grid-area: 'recetaDelDia';
-}
-
-.indexMain .seccionesInicio.hamburguesaCalabaza img{
-    grid-area: 'hamburguesaCalabaza';
-}
-.indexMain .seccionesInicio.recetasarticuloDestacado h2{
-    grid-area: 'articuloDestacado';
-}
-.indexMain .seccionesInicio.saludableVsLight img{
-    grid-area: 'saludableVsLight';
-}
 /* RECETAS */
 .mainRecetas{
-    width: 90%;
     height: auto;
     align-content: center;
     justify-content: space-evenly;
     justify-content: center;
     display: flex;
     flex-flow: row wrap;
-    padding: 10px;
+    padding: 20px;
 }
 .mainRecetas .todasLasRecetas{
     color: black;
@@ -240,7 +217,6 @@ h3 {
 
 /* ARTICULOS */
 .mainArticulos{
-    width: 90%;
     height: auto;
     align-content: center;
     justify-content: space-evenly;
@@ -248,6 +224,8 @@ h3 {
     display: flex;
     flex-flow: row wrap;
     padding: 10px;
+    background-color: #fbeeca;
+
 }
 .mainArticulos .todosLosArticulos{
     color: black;
@@ -286,12 +264,12 @@ h3 {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 25px;
     text-align: center;
-    width: 700px;
-    height: 400px;
-    padding: 100px;   
+    height:265px;
+    padding: 30px;   
     display: flex;
     flex-direction:column;
     justify-content: center;
+    background-color: #fbeeca;
 }
 
 /* Pie de pagina*/
@@ -305,7 +283,7 @@ footer{
     text-align: center;
     padding: 20px;
 }
-@media screen and (min-width: 768px) and (max-width:1200px) {
+@media screen and (min-width: 400px) and (max-width:1200px) {
     .logo .imgLogo{
         justify-content: center;
         margin-top: 20px;

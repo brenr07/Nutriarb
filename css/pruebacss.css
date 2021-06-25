@@ -26,3 +26,11 @@
 .main__contacto {
   width: 80vw;
   height: auto; }
+
+.hamburguesasDeCalabaza {
+  padding: 100px;
+  background-color: #fbeeca; }
+
+.mainRecetas {
+  background-color: #fbeeca;
+  text-align: -webkit-center; }
